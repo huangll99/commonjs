@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<input type="text" name="thename">
+<button onclick="clickone()">点击</button>
+
+<script type="text/javascript" src="../../js/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/commons/dom.js"></script>
+<script type="text/javascript">
+    function clickone() {
+        var input = getInputByName("thename");
+        alert($(input).val());
+    }
+</script>
+</body>
+</html>
