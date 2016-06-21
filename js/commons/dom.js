@@ -9,3 +9,16 @@
 function getInputByName(name) {
     return $("[name=" + name + "]");
 }
+
+/**
+ *  隐藏元素
+ *	e:元素
+ *	reflow:true->所占空间消失；false->所占空间保留
+ */
+function hide(e,reflow) {
+    if (reflow) {
+        e.style.display="none"
+    }else{
+        e.style.visibility="hidden";
+    }
+}
